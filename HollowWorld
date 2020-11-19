@@ -1,44 +1,24 @@
 using System;
 using static System.Console;
-using System.Collections.Generic;
+
 namespace HollowWorld
 {
-    class MainClass//Lamdba
-    {
-        public delegate int varAdd3(int x, int y);
-        public varAdd3 Add3;
-
-        Func<int, int, int> Add4;
-
+    class MainClass
         public static void Main(string[] args)
         {
-            //int a;
-            //int b;
-            //int e = 5;
+            string name;
+            Write("請輸入你的名字：");
+            name = ReadLine();
+            WriteLine($"你好{name}........");
 
-            //a = 1;
-            //b = 2;
-            ////int c = Add(a, b);
+            ReadKey();
 
-            Func<int, int, int> Add2 = (x, y) => { int z = x + y; return z; };
-
-            //Func<int, int, int> varAdd2 = Add;                      //引用方法變數就冇括號！
-
-            ////(a, b) =>  a+b+e; 
-
-            int d = Add2(1,2);
-
-            WriteLine(d);
-
+            int number;
+            Write("請輸入數字：");
+            number = int.Parse(ReadLine());
+            int x = number + 2;
+            WriteLine("你輸入的數字加入2之後等於：" + x);
         }
-
-
-        public static int Add(int a,int b)
-        {
-            //int z = x + y;
-            return a + b;
-        }
-    }
 }
 
 

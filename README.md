@@ -14,15 +14,22 @@
 
 ### 介紹
 ****
-這裡的程式集，是我在YouTube頻道的C#影片內容。
+這裡的程式集，是我在YouTube頻道的C#影片補充內容。
+除了前3條影片可以先讀，以後的影片並冇次序上的關係。
 
-This code for My Youtube Channel talk about [C# Video](https://www.youtube.com/playlist?list=PLyJbWrT-T2KIcPVj4l_R-1Ui7MPm0cwYU)
+初學程式，有三個階段：
+1.基本運作
+2.引用類別
+3.應用途徑
+
+基本運作包括：基本運算，變數觀念，條件迴圈，用終端機檢查程式結果。
+引用類別又叫物件導向，就是本程式集的焦點。
+
+關於應用部份，C#可以制作軟件，資料庫，或遊戲制作。
+我建議，請選擇好唯一一個主要的應用層面，因為集中於一個層面能夠盡快發揮所學而且能夠見到成果。
 
 ### 影片
 ****
-<h2></h2>
-
-影片清單：[全部影片](https://www.youtube.com/playlist?list=PLyJbWrT-T2KIcPVj4l_R-1Ui7MPm0cwYU)
 
 第一編：[Hollow World](https://www.youtube.com/watch?v=V1Fcy0iNwcw&list=PLyJbWrT-T2KIcPVj4l_R-1Ui7MPm0cwYU&index=1&t=61s)
 
@@ -30,4 +37,4 @@ This code for My Youtube Channel talk about [C# Video](https://www.youtube.com/p
 
 第三編：[層次關係](https://www.youtube.com/watch?v=amUn54_37rc&list=PLyJbWrT-T2KIcPVj4l_R-1Ui7MPm0cwYU&index=3&ab_channel=KaPo&loop=0)
 
-
+影片清單：[全部影片](https://www.youtube.com/playlist?list=PLyJbWrT-T2KIcPVj4l_R-1Ui7MPm0cwYU)

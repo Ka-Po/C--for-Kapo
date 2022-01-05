@@ -1,0 +1,26 @@
+using System;
+
+namespace Indexer
+{
+    class MainClass
+    {
+        public static void Main(string[] args)
+        {
+            Indexer ind = new Indexer();
+            ind[2] = 22;
+            Console.WriteLine(ind[2]);
+        }
+    }
+
+    //索引子
+    class Indexer
+    {
+        int[] number = new int[5];
+        public int this[int index]
+        {
+            get { return number[index]; }
+            set { number[index] = value; }
+        }
+    }
+
+}

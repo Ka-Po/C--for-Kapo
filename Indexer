@@ -12,11 +12,11 @@ namespace Indexer
         }
     }
 
-    //索引子
+    //陣列類列
     class Indexer
     {
         int[] number = new int[5];
-        public int this[int index]
+        public int this[int index]      //索引子
         {
             get { return number[index]; }
             set { number[index] = value; }

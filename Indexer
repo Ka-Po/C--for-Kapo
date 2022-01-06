@@ -12,7 +12,7 @@ namespace Indexer
         }
     }
 
-    //陣列類列
+    //陣列類別
     class Indexer
     {
         int[] number = new int[5];

@@ -6,42 +6,30 @@ namespace structure
     {
         public static void Main(string[] args)
         {
-            Rectangle rtg = new Rectangle(3,3,3);              //結構的建構式，傳入參數，不應該有預設數值。
+            Rectangle rtg = new Rectangle(2,2);              //結構的建構式，傳入參數，不應該有預設數值。
 
-            Console.WriteLine(rtg.SquareArea(2));
-            Console.WriteLine(rtg.length);
+            Console.WriteLine(rtg.RectangleArea());
+         //   Console.WriteLine(rtg.length);
         }
     }
 
-    struct Rectangle                                                    //當類別內的程式不再改變，將class改寫成struct
+    class Rectangle                                                    //當類別內的程式不再改變，將class改寫成struct
     {
         int area;
         public int length;
         int height;
 
-        public Rectangle(int l, int h, int a)                    //結構的建構式，預設參數的值不會代入變數，而類別就會！
+        public Rectangle(int l = 1, int h = 1)                    //結構的建構式，預設參數的值不會代入變數，而類別就會！
         {
             length = l;
             height = h;
-            area = a;                                                         //結構的建構式要，全部變數都要代入值，而類別不需要！
+          //  area = a;                                                         //結構的建構式要，全部變數都要代入值，而類別不需要！
         }
 
         public int RectangleArea()
         {
+          //  int area;
             return area = length * height;
-        }
-
-        public int RectangleArea(int l, int h)
-        {
-            length = l;
-            height = h;
-            return area = length * height;
-        }
-
-        public int SquareArea(int l)                        //同區的同名變數，會優先於上面的同名變數！不要寫新的length出來
-        {
-            length = l;
-            return area = length * length;                       
         }
     }
 }

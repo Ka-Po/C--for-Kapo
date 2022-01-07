@@ -6,7 +6,7 @@ namespace structure
     {
         public static void Main(string[] args)
         {
-            Rectangle rtg = new Rectangle(2,2);              //結構的建構式，傳入參數，不應該有預設數值。
+            Rectangle rtg = new Rectangle(2,2);              //結構的建構式，要傳入參數，因為結構的建構式不會代入預設數值。但這個部份實例化的不是結構，而是類別。
 
             Console.WriteLine(rtg.RectangleArea());
          //   Console.WriteLine(rtg.length);

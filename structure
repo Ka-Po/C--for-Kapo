@@ -26,6 +26,11 @@ namespace structure
             area = a;                                                         //結構的建構式要，全部變數都要代入值，而類別不需要！
         }
 
+        public int RectangleArea()
+        {
+            return area = length * height;
+        }
+
         public int RectangleArea(int l, int h)
         {
             length = l;

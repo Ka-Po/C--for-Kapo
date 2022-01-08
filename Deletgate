@@ -3,7 +3,8 @@ using System;
 namespace Deletgate
 {
 
-    public delegate void de();            //宣告新形態
+    public delegate void de(int a);            //宣告新形態
+    public delegate int de2();
 
     public class MainClass
     {
@@ -12,8 +13,14 @@ namespace Deletgate
 
         public static void Main(string[] args)
         {
-            //de B = funtion1;            //類似宣告int,string型態
-            //B();
+            de B = funtion1;            //類似宣告int,string型態
+            B(2);
+
+            //Action B2 = funtion1;
+            //B2();
+
+            Func<int> func = funtion2;
+            Console.WriteLine(func());
 
             //de C = new de(funtion1);    //類似宣告實例化類別：CL cl = new CL();
             //C();                        //但執行起來都是作為方法去執行
@@ -23,12 +30,30 @@ namespace Deletgate
             //MainClass A = new MainClass();
             //A.a = funtion1;
             //A.a();
+
+            void funtion1(int a = 1)
+            {
+                Console.WriteLine(a);
+            }
+
+            int funtion2()
+            {
+                return 2;
+            }
+
+
+            Predicate<int> isEven = IsEven;
+            Console.WriteLine(isEven(5));
+
+            bool IsEven(int number)
+            {
+                return number % 2 == 0;
+            }
+
         }
 
-        public static void funtion1()
-        {
-            Console.WriteLine("Showfuntion1");
-        }
+
+
     }
 
 

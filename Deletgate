@@ -21,6 +21,7 @@ namespace Deletgate
 
             //
             de2 C = method2;
+            C(1);
 
             Func<int,string> func = method2;
             Console.WriteLine(func(1));

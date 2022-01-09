@@ -16,11 +16,8 @@ namespace Deletgate
             de B = method1;            //類似宣告int,string型態
             B();
 
-            de B2 = new de(method1);
+            Action B2 = method1;
             B2();
-
-            Action B3 = method1;
-            B3();
 
             //
             de2 C = method2;

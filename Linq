@@ -16,9 +16,9 @@ namespace Linq
             };
 
             var result = from tea in lemonTea
-                                where tea.sweetLevel > 5 && tea.size != "中杯"
-                                orderby tea.Ord
-                                select tea;
+                         where tea.sweetLevel > 5 && tea.size != "中杯"
+                         orderby tea.Ord
+                         select tea;
 
             foreach (var tea in result)
             {

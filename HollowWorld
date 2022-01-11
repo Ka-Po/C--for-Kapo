@@ -15,7 +15,7 @@ namespace HollowWorld
 
             int number;
             Write("請輸入數字：");
-            number = int.Parse(ReadLine());
+            number = int.Parse(ReadLine());                //文字轉成數字型態，伐入到變數
             int x = number + 2;
             WriteLine("你輸入的數字加入2之後等於：" + x);
         }

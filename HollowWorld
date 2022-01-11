@@ -11,7 +11,7 @@ namespace HollowWorld
             name = ReadLine();
             WriteLine($"你好{name}........");
 
-            ReadKey();
+            ReadKey();                                      //等待你按一次return
 
             int number;
             Write("請輸入數字：");

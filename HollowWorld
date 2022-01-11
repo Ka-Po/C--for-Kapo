@@ -7,9 +7,9 @@ namespace HollowWorld
         public static void Main(string[] args)
         {
             string name;
-            Write("請輸入你的名字：");
+            Write("input your name : "); 
             name = ReadLine();
-            WriteLine($"你好{name}........");
+            WriteLine("Hi"+" "+$"{name}");
 
             ReadKey();                                      //等待你按一次return
 

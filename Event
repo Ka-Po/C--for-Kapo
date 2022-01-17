@@ -5,7 +5,7 @@ namespace Event
     class MainClass
     {
         public  delegate void de();
-        public static event de ShowText;
+        public static event de ShowText;                    // event可以保護delegate
 
         public static void Main(string[] args)
         {

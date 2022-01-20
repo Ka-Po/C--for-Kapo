@@ -36,9 +36,6 @@ namespace Array_Search
             }
 
 
-
-            #region Find 3
-
             //int[] Number = { 1, 2, 3 };
 
             //if (Find3(Number))
@@ -51,18 +48,13 @@ namespace Array_Search
             //}
 
             ////  Console.WriteLine("Hello World!");
-            #endregion
+
         }
 
         static public bool FindNumber(Point points)
         {
-            return points.X * points.Y >= 6;
+            return points.X * points.Y >= 5;
         }
-
-        //static public bool FindNumber(Point points)
-        //{
-        //    return points.X == 2 && points.Y == 3;
-        //}
 
         //static public bool Find3(int[] a)
         //{

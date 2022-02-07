@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace h
 {
@@ -8,18 +10,22 @@ namespace h
         {
             //Console.WriteLine("Hello World!");
 
-            //B b = new B();                                //  多形
+            //B b = new B();
             //b.ShowText();
 
             //C c = new C();
             //c.ShowText();
 
-            A[] list = new A[2];
-            list[0] = new B();
-            list[1] = new C(2,4);
+            //list<A> list1 = new list<A>();
+            //list2[0] = new B();
+            //list2[1] = new C(2,4);
 
-             float SumArea = 0.0f;
-            foreach (var item in list)
+            List<A> list2 = new List<A>();
+//            list2.Add(new B());
+            list2.Add(new C(2, 4));
+
+            float SumArea = 0.0f;
+            foreach (var item in list2)
             {
                 // item.ShowText();
                 SumArea += item.Area();

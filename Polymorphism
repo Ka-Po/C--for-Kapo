@@ -1,37 +1,33 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 
-namespace h
+namespace Polymorphism
 {
     class MainClass
     {
         public static void Main(string[] args)
         {
-            //Console.WriteLine("Hello World!");
+            //  Console.WriteLine("Hello World!");
 
-            //B b = new B();
+            //A b = new B();                  // 
             //b.ShowText();
 
-            //C c = new C();
-            //c.ShowText();
+            //A[] a = new A[2];
+            //a[0] = new B();
+            //a[1] = new C();
 
-            //list<A> list1 = new list<A>();
-            //list2[0] = new B();
-            //list2[1] = new C(2,4);
-
-            List<A> list2 = new List<A>();
-//            list2.Add(new B());
-            list2.Add(new C(2, 4));
+            List<A> a2 = new List<A>();
+            a2.Add( new B());
+            a2.Add( new C(2,4));
 
             float SumArea = 0.0f;
-            foreach (var item in list2)
+            foreach (var item in a2)
             {
-                // item.ShowText();
-                SumArea += item.Area();
+                //   item.ShowText();
+              SumArea +=  item.Area();
             }
+            Console.WriteLine($"{SumArea}");
 
-            Console.WriteLine("SumArea = " + $"{SumArea}");
         }
     }
 
@@ -41,42 +37,44 @@ namespace h
         //{
         //    Console.WriteLine("A!");
         //}
-         abstract public float Area();//=0.0f;
+
+        abstract public float Area();
+
     }
 
-    class B : A
+    class B:A
     {
-         override public void ShowText()
+        override public void ShowText()
         {
             Console.WriteLine("B!");
         }
 
-        public override float Area()
+        override public float Area()
         {
             return 2;
         }
-
     }
 
-    class C : A
+    class C:A
     {
         override public void ShowText()
         {
             Console.WriteLine("C!");
         }
 
-        public float h,w;
-
+        public float h, w;
         public C(float h,float w)
         {
             this.h = h;
             this.w = w;
         }
 
-        public override float Area()
+        override public float Area()
         {
             return h*w;
         }
+
     }
+
 
 }

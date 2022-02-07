@@ -6,9 +6,9 @@ namespace h
     {
         public static void Main(string[] args)
         {
-  //          Console.WriteLine("Hello World!");
+            //Console.WriteLine("Hello World!");
 
-            //A b = new B();                      // 開始多形
+            //B b = new B();                                //  多形
             //b.ShowText();
 
             //C c = new C();
@@ -16,17 +16,18 @@ namespace h
 
             A[] list = new A[2];
             list[0] = new B();
-            list[1] = new C();
+            list[1] = new C(2,4);
 
+             float SumArea = 0.0f;
             foreach (var item in list)
             {
-                item.ShowText();
+                // item.ShowText();
+                SumArea += item.Area();
             }
 
-
+            Console.WriteLine("SumArea = " + $"{SumArea}");
         }
     }
-
 
     abstract class A
     {
@@ -34,7 +35,7 @@ namespace h
         //{
         //    Console.WriteLine("A!");
         //}
-
+         abstract public float Area();//=0.0f;
     }
 
     class B : A
@@ -43,6 +44,12 @@ namespace h
         {
             Console.WriteLine("B!");
         }
+
+        public override float Area()
+        {
+            return 2;
+        }
+
     }
 
     class C : A
@@ -51,7 +58,19 @@ namespace h
         {
             Console.WriteLine("C!");
         }
-    }
 
+        public float h,w;
+
+        public C(float h,float w)
+        {
+            this.h = h;
+            this.w = w;
+        }
+
+        public override float Area()
+        {
+            return h*w;
+        }
+    }
 
 }

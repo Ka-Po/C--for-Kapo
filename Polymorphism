@@ -1,0 +1,57 @@
+using System;
+
+namespace h
+{
+    class MainClass
+    {
+        public static void Main(string[] args)
+        {
+  //          Console.WriteLine("Hello World!");
+
+            //A b = new B();                      // 開始多形
+            //b.ShowText();
+
+            //C c = new C();
+            //c.ShowText();
+
+            A[] list = new A[2];
+            list[0] = new B();
+            list[1] = new C();
+
+            foreach (var item in list)
+            {
+                item.ShowText();
+            }
+
+
+        }
+    }
+
+
+    abstract class A
+    {
+        abstract public void ShowText();
+        //{
+        //    Console.WriteLine("A!");
+        //}
+
+    }
+
+    class B : A
+    {
+         override public void ShowText()
+        {
+            Console.WriteLine("B!");
+        }
+    }
+
+    class C : A
+    {
+        override public void ShowText()
+        {
+            Console.WriteLine("C!");
+        }
+    }
+
+
+}

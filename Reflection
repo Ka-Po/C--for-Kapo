@@ -29,13 +29,17 @@ namespace Reflection
             System.Reflection.MethodInfo[] MethodArray = type.GetMethods();
             foreach (var item in type.GetMethods())
             {
-                foreach (var item2 in item.GetParameters())
-                {
-                    if (item2.ParameterType.Name == "MyClass")
-                    {
-                        Console.Write("Method = " + item.Name + "  " + "ReturnType = " + item.ReturnType.Name + "\n");
-                    }
-                }
+
+                Console.Write("Method = " + item.Name + "  " + "ReturnType = " + item.ReturnType.Name + "\n");
+
+                //foreach (var item2 in item.GetParameters())
+                //{
+                //    if (item2.ParameterType.Name == "MyClass")
+                //    {
+                //        Console.Write("Method = " + item.Name + "  " + "ReturnType = " + item.ReturnType.Name + "\n");
+                //    }
+                //}
+
             }
 
             //System.Reflection.Assembly assembly = my.GetType().Assembly;
@@ -55,15 +59,15 @@ namespace OtherSpace
       class MyClass  
     {
         //欄位，Field
-        public string name;
-        public int number;
+        //public string name;
+        //public int number;
         
-        private int _age;
+        //private int _age;
  //       public int age { get; set; }  //屬性，Property
 
         // 方法，Method
         public void M1() { }
-        public void M2(MyClass myClass) { }
+ //       public void M2(MyClass myClass) { }
 
     }
 }

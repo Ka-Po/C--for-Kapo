@@ -12,7 +12,7 @@ namespace Reflection
             //          Console.WriteLine("Hello World!");
 
             MyClass my = new MyClass();
-            Type type = my.GetType();       // 類別資料 變數  形態 Type
+            Type type = my.GetType();       // 類別資料 的變數 的形態 ：Type
 
             //System.Reflection.BindingFlags flags = System.Reflection.BindingFlags.Public
             //                                                                   | System.Reflection.BindingFlags.NonPublic ;

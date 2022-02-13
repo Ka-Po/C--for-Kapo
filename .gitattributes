@@ -1,2 +1,2 @@
-
-*.js lingist-language=C#
+*.cs lingist-language=C#
+*.ico lingist-language=C#

@@ -29,7 +29,4 @@ GitHub內的程式，有部份經過修改，
 ### 影片：
 ****
 
-B站有部份影片：
-https://space.bilibili.com/1217107552/channel/seriesdetail?sid=1916331
-
 
